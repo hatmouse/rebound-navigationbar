@@ -1,0 +1,54 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>山大服务助手</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0;">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/jquery.movebg.js"></script>
+<script src="js/new_move.js"></script>
+</head>
+
+<body>
+<!-- 代码 开始 -->
+<div class="wraper">
+    <div class="nav">
+        <ul>
+            <li class="nav-item cur"><a href="http://sc.chinaz.com/">Home</a></li>
+            <li class="nav-item"><a href="#">个人中心</a>
+	    <div class="nav-box hidden-box">
+		<ul>
+		    <li><a href="www.baidu.com">我的成绩</a></li>
+		    <li><a href="www.baidu.com">消息动态</a></li>
+		    <li><a href="www.baidu.com">提交反馈</a></li>
+		    <li><a href="www.baidu.com">选修话题</a></li>
+		</ul>
+	    </div>
+	    </li>
+	    <li class="nav-item"><a href="#">功能模块</a>
+	    <div class="nav-box hidden-box">
+		<ul>
+		    <li>自习室</li>
+		    <li>挂科率</li>
+		    <li>最近新闻</li> 
+		</ul>
+	    </div>
+	    </li>
+            <li class="nav-item"><a href="http://sc.chinaz.com/">智能管家</a></li>
+        </ul>
+        <!--移动的滑动-->
+        <div class="move-bg"></div>
+        <!--移动的滑动 end-->
+    </div>
+</div>
+<script>
+$(function(){
+	$(".nav").movebg({width:25,extra:3,speed:400,rebound_speed:500});
+})
+//$(".nav-item").mouseover(function(){mynav($(this))});
+</script>
+
+<!-- 代码 结束 -->
+</div>
+</body>
+</html>
