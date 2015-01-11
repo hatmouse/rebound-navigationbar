@@ -1,6 +1,6 @@
 var prev = 1;
 
-function mynav($this) {
+function myrenav($this) {
     //alert("fa");
     var defaultser = {
         width: 25,

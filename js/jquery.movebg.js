@@ -13,7 +13,7 @@
 		return this.each(function() {
 			var _this = $(this);
 			var _item = _this.children("ul").children("li").children("a"); /*找到触发滑块滑动的元素*/
-			var all_navbox = $(".nav-box");
+			var all_navbox = $(".mynav-box");
 			var origin = _this.children("ul").children("li.cur").index(); /*获得当前导航的索引，即默认需要进行高亮的地方，比如是新添加的功能,需引起注意*/
 			var _mover = _this.find(".move-bg"); /*找到滑块，注意滑块布局为absolute，不占位，需要使用top和left进行绝对定位*/
 			var hidden; /*设置一个变量当html中没有规定cur时在鼠标移出导航后消失*/
@@ -37,7 +37,7 @@
 						all_navbox.hide();
 						/*传如前*/
 						//_cur_navbox.show()
-						_cur_navbox = $(it).parent().find(".nav-box");
+						_cur_navbox = $(it).parent().find(".mynav-box");
 						move($(_cur_navbox));
 						prev = cur; /*滑动完成对上个滑块值进行赋值*/
 					}
